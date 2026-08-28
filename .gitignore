@@ -1,0 +1,13 @@
+﻿# Node & IDE
+node_modules/
+.vscode/
+.idea/
+*.log
+
+# OS Temp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test Profilleri
+*test_profile*
