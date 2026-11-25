@@ -1,0 +1,55 @@
+﻿{
+  "manifest_version": 3,
+  "name": "T-Özet",
+  "version": "1.1.0",
+  "author": "Taroxzen",
+  "description": "T-Özet, haber, makale ve forum yazılarını Gemini ile özetleyen hızlı tarayıcı eklentisidir.\n\n• Açık sayfanın metnini alır, seçtiğin şablona göre özetler.\n• Özet doğrudan Gemini sayfasında hazır yanıt olarak görünür.\n• Basit özet, madde madde, tablo, 5N1K, yönetici özeti ve özel prompt seçenekleri sunar.\n• Metin seçimi, sağ tık menüsü veya Alt + S ile tetiklenir.\n• Geçici Sohbet modunda çalışır; özet geçmişi tutmaz.\n\n• Geliştirici: Taroxzen — https://github.com/taroxzen/T-Ozet\n• Lisans: GPL-3.0",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "T-Özet (Taroxzen)",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "options_page": "options/options.html",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "contextMenus",
+    "scripting",
+    "webNavigation",
+    "system.display",
+    "offscreen"
+  ],
+  "optional_permissions": [
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "https://gemini.google.com/*"
+  ],
+  "optional_host_permissions": [
+    "<all_urls>"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "t-ozet@taroxzen.local",
+      "strict_min_version": "109.0"
+    }
+  },
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["content/gemini-autofill.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Dolu zemin -->
+  <rect width="128" height="128" rx="20" fill="#000000"/>
+
+  <!-- Eşit aralıklı, eşit ölçülü dört satır -->
+  <rect x="30" y="22" width="68" height="14" rx="3" fill="#9CA3AF"/>
+  <rect x="30" y="46" width="68" height="14" rx="3" fill="#9CA3AF"/>
+  <rect x="30" y="70" width="68" height="14" rx="3" fill="#9CA3AF"/>
+  <rect x="30" y="94" width="68" height="14" rx="3" fill="#E8E8E8"/>
+</svg>

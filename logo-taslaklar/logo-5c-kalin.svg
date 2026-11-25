@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <rect width="128" height="128" rx="20" fill="#000000"/>
+
+  <!-- Daha kalın, daha kısa satırlar -->
+  <rect x="34" y="13" width="60" height="18" rx="4" fill="#9CA3AF"/>
+  <rect x="34" y="41" width="60" height="18" rx="4" fill="#9CA3AF"/>
+  <rect x="34" y="69" width="60" height="18" rx="4" fill="#9CA3AF"/>
+  <rect x="34" y="97" width="60" height="18" rx="4" fill="#E8E8E8"/>
+</svg>

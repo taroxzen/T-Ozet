@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <rect width="128" height="128" rx="20" fill="#000000"/>
+
+  <!-- Daralan girdi satırları -->
+  <rect x="28" y="21" width="72" height="12" rx="3" fill="#9CA3AF"/>
+  <rect x="32" y="45" width="64" height="12" rx="3" fill="#9CA3AF"/>
+  <rect x="36" y="69" width="56" height="12" rx="3" fill="#9CA3AF"/>
+
+  <!-- Tam genişlikte çıktı satırı -->
+  <rect x="28" y="93" width="72" height="14" rx="3" fill="#E8E8E8"/>
+</svg>

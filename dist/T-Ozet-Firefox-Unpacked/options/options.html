@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Özet — Ayarlar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Doto:wght@400..700&family=Space+Grotesk:wght@300..700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../theme.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <img src="../icons/icon48.png" alt="" class="logo">
+        <div>
+          <p class="eyebrow">TAROXZEN / SYSTEM 01</p>
+          <h1>T-ÖZET</h1>
+          <p class="subtitle">AYARLAR & PROMPT KÜTÜPHANESİ</p>
+        </div>
+      </div>
+      <div class="header-badge">
+        <span class="pulse-dot"></span>
+        <span>V1.1 / DARK</span>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="card privacy-card">
+        <div class="privacy-icon">[OK]</div>
+        <div>
+          <h2>SIFIR KAYIT / GEÇİCİ SOHBET</h2>
+          <p>Gemini geçici sohbet moduna alınır. Özetler etkinlik kaydına yazılmaz; içerik Google tarafından işlenir.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <h2>PROMPT ŞABLONLARI</h2>
+          <p class="desc">Sayfa özetlerinde kullanılacak varsayılan şablonu seç.</p>
+        </div>
+
+        <div class="preset-label" style="margin-bottom:8px;">
+          <span>AKTİF ŞABLON</span>
+          <span id="active-template-name" style="color:var(--text-display);">BASİT ÖZET</span>
+        </div>
+
+        <div class="presets-grid" id="presets-container">
+          <button class="btn-preset template-btn" data-preset="apple">BASİT ÖZET</button>
+          <button class="btn-preset template-btn" data-preset="two_words">2 KELİMEDE FLAŞ</button>
+          <button class="btn-preset template-btn" data-preset="bullets">MADDE MADDE</button>
+          <button class="btn-preset template-btn" data-preset="table">TABLO FORMATI</button>
+          <button class="btn-preset template-btn" data-preset="five_w">5N1K ANALİZİ</button>
+          <button class="btn-preset template-btn" data-preset="eli5">BASİT ANLAT</button>
+          <button class="btn-preset template-btn" data-preset="executive">YÖNETİCİ ÖZETİ</button>
+          <button class="btn-preset template-btn" data-preset="custom">ÖZEL PROMPT</button>
+        </div>
+
+        <div class="custom-box">
+          <label for="opt-custom-prompt">ÖZEL PROMPT</label>
+          <textarea id="opt-custom-prompt" class="custom-textarea" placeholder="Örn: Sadece sayısal hedefleri listele ve en büyük riski söyle..."></textarea>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <h2>POPUP KONUMU</h2>
+          <p class="desc">Gemini popup penceresinin konum ve boyutunu ayarla.</p>
+        </div>
+
+        <div class="screen-container">
+          <div class="monitor-frame" id="monitor-frame">
+            <div class="monitor-titlebar">
+              <span id="screen-res-text">EKRAN: 1920 × 1080</span>
+              <span>CANLI MONİTÖR</span>
+            </div>
+            <div class="mini-popup-window" id="mini-popup">
+              <div class="mini-popup-header">
+                <span>GEMINI POPUP</span>
+                <span>×</span>
+              </div>
+              <div class="mini-popup-body">
+                <span>ÖZET PENCERESİ</span>
+                <span id="mini-dim-text">540×760</span>
+              </div>
+              <div class="resize-handle" id="mini-resize"></div>
+            </div>
+          </div>
+
+          <div class="monitor-stats">
+            <span>BOYUT <b id="stat-size">540 × 760 PX</b></span>
+            <span>KONUM <b id="stat-pos">X=50, Y=60</b></span>
+          </div>
+
+          <div class="monitor-actions">
+            <button class="btn-preset" id="preset-left">SOL TARAF</button>
+            <button class="btn-preset" id="preset-right">SAĞ TARAF</button>
+            <button class="btn-preset" id="preset-center">ORTALA</button>
+            <button class="btn-preset" id="preset-wide">GENİŞ PANEL</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <h2>BUTON ÖĞRETİMİ</h2>
+          <p class="desc">ÖĞREN'e bas. Gemini Google sayfası açılsın. İlgili yeri sen seç, sonra OK'a bas.</p>
+        </div>
+
+        <div class="teach-row">
+          <div>
+            <b>GİZLİ SEÇ</b>
+            <div class="teach-status" id="status-hidden">ÖĞRENİLMEDİ</div>
+          </div>
+          <div class="teach-actions">
+            <button class="btn-preset btn-primary" id="learn-hidden">ÖĞREN</button>
+            <button class="btn-preset btn-destructive" id="reset-hidden">SIFIRLA</button>
+          </div>
+        </div>
+
+        <div class="teach-row">
+          <div>
+            <b>GÖNDER BUTONU</b>
+            <div class="teach-status" id="status-send">ÖĞRENİLMEDİ</div>
+          </div>
+          <div class="teach-actions">
+            <button class="btn-preset btn-primary" id="learn-send">ÖĞREN</button>
+            <button class="btn-preset btn-destructive" id="reset-send">SIFIRLA</button>
+          </div>
+        </div>
+
+        <div class="teach-row">
+          <div>
+            <b>AI SEÇ</b>
+            <div class="teach-status" id="status-model">ÖĞRENİLMEDİ</div>
+          </div>
+          <div class="teach-actions">
+            <button class="btn-preset btn-primary" id="learn-model">ÖĞREN</button>
+            <button class="btn-preset btn-destructive" id="reset-model">SIFIRLA</button>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="card">
+        <div class="section-head">
+          <h2>HTML → METİN</h2>
+          <p class="desc">Ham HTML yapıştır; offscreen DOMParser ile temiz metne çevrilsin.</p>
+        </div>
+        <textarea id="html-input" class="html-input" placeholder="<article>...</article>" aria-label="Ham HTML"></textarea>
+        <div class="teach-actions" style="margin-top:8px;">
+          <button class="btn-preset btn-primary" id="btn-clean">METNİ ÇIKAR</button>
+        </div>
+        <pre id="clean-output" class="clean-output">[ ÇIKTI YOK ]</pre>
+      </section>
+
+    </main>
+  </div>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <rect width="128" height="128" rx="20" fill="#0A0A0B"/>
+
+  <!-- Açık gri robot silueti: yüksek kontrast -->
+  <rect x="24" y="38" width="80" height="60" rx="16" fill="#E8E8E8"/>
+
+  <!-- Koyu gözler ve özet çizgisi -->
+  <rect x="42" y="54" width="12" height="12" rx="6" fill="#0A0A0B"/>
+  <rect x="74" y="54" width="12" height="12" rx="6" fill="#0A0A0B"/>
+  <rect x="46" y="78" width="36" height="6" rx="3" fill="#0A0A0B"/>
+</svg>

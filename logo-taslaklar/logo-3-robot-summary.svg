@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Zemin -->
+  <rect width="128" height="128" rx="28" fill="#0A0A0B"/>
+  <rect x="6" y="6" width="116" height="116" rx="24" fill="#141416" stroke="#2A2A2C" stroke-width="2"/>
+
+  <!-- Anten -->
+  <path d="M64 36 L64 22" stroke="#9CA3AF" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="64" cy="18" r="4" fill="#E8E8E8"/>
+
+  <!-- Kulaklar -->
+  <rect x="20" y="54" width="8" height="22" rx="4" fill="#5B6068"/>
+  <rect x="100" y="54" width="8" height="22" rx="4" fill="#5B6068"/>
+
+  <!-- Kafa -->
+  <rect x="28" y="36" width="72" height="58" rx="14" fill="#1D1D20" stroke="#3A3A3E" stroke-width="2.5"/>
+
+  <!-- Yüz ekranı -->
+  <rect x="36" y="44" width="56" height="42" rx="8" fill="#080809" stroke="#26262A" stroke-width="1.5"/>
+
+  <!-- Gözler -->
+  <rect x="47" y="53" width="10" height="11" rx="5" fill="#E8E8E8"/>
+  <rect x="71" y="53" width="10" height="11" rx="5" fill="#E8E8E8"/>
+
+  <!-- Özet satırları -->
+  <rect x="48" y="71" width="32" height="3" rx="1.5" fill="#9CA3AF"/>
+  <rect x="48" y="77" width="25" height="3" rx="1.5" fill="#6B7280"/>
+  <rect x="48" y="83" width="17" height="3" rx="1.5" fill="#4B5058"/>
+</svg>

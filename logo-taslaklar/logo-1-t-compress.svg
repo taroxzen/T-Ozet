@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Zemin: koyu, hafif gri panel -->
+  <rect width="128" height="128" rx="28" fill="#0B0B0C"/>
+  <rect x="6" y="6" width="116" height="116" rx="24" fill="#151517" stroke="#2A2A2C" stroke-width="2"/>
+
+  <!-- T'nin yatay çubuğu: üst üste metin satırları -->
+  <rect x="38" y="32" width="52" height="6" rx="3" fill="#E8E8E8"/>
+  <rect x="38" y="43" width="52" height="6" rx="3" fill="#9CA3AF"/>
+  <rect x="38" y="54" width="52" height="6" rx="3" fill="#5E6470"/>
+
+  <!-- T'nin gövdesi -->
+  <rect x="60" y="32" width="8" height="48" rx="2" fill="#E8E8E8"/>
+
+  <!-- Sıkıştırma oku -->
+  <path d="M64 82 L64 100 M55 91 L64 100 L73 91" fill="none" stroke="#E8E8E8" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+
+  <!-- Alt kısa satır: özet çıktısı -->
+  <rect x="48" y="108" width="32" height="4" rx="2" fill="#6B7280"/>
+</svg>

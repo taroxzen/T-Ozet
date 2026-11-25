@@ -1,0 +1,219 @@
+﻿/* T-Özet v1.1 — Sayfa içi katmanlar (Nothing Design / dark) */
+#ai-summarizer-bubble {
+  position: absolute;
+  z-index: 2147483645;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #000000;
+  border: 1px solid #333333;
+  color: #E8E8E8;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-family: "Space Mono", "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  user-select: none;
+  animation: ndFade 0.15s ease-out;
+}
+
+#ai-summarizer-bubble:hover {
+  background: #FFFFFF;
+  color: #000000;
+  border-color: #FFFFFF;
+}
+
+#ai-summarizer-bubble img {
+  width: 14px;
+  height: 14px;
+  filter: grayscale(1);
+}
+
+#ai-summarizer-card {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 440px;
+  max-width: calc(100vw - 40px);
+  background: #000000;
+  border: 1px solid #333333;
+  border-radius: 12px;
+  z-index: 2147483646;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  color: #E8E8E8;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: ndFade 0.18s ease-out;
+}
+
+.ai-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #111111;
+  border-bottom: 1px solid #222222;
+  cursor: move;
+  user-select: none;
+}
+
+.ai-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Space Mono", "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.ai-header-left img { width: 16px; height: 16px; filter: grayscale(1); }
+
+.ai-btn-icon {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #999999;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  transition: color 0.18s ease-out, border-color 0.18s ease-out;
+}
+
+.ai-btn-icon:hover { color: #D71921; border-color: #D71921; }
+
+.ai-presets-bar {
+  padding: 8px 12px;
+  background: #000000;
+  border-bottom: 1px solid #222222;
+  overflow-x: auto;
+}
+
+.ai-presets-scroll {
+  display: flex;
+  gap: 6px;
+  flex-wrap: nowrap;
+}
+
+.ai-preset-pill {
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid #333333;
+  border-radius: 999px;
+  font-family: "Space Mono", "JetBrains Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #999999;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ai-preset-pill:hover { color: #E8E8E8; border-color: #E8E8E8; }
+
+.ai-preset-pill.active {
+  background: #FFFFFF;
+  color: #000000;
+  border-color: #FFFFFF;
+}
+
+.ai-custom-prompt-container {
+  padding: 12px 16px;
+  background: #000000;
+  border-bottom: 1px solid #222222;
+}
+
+.ai-custom-label {
+  display: block;
+  font-family: "Space Mono", "JetBrains Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999999;
+  margin-bottom: 6px;
+}
+
+.ai-custom-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  height: 64px;
+  background: #111111;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  color: #E8E8E8;
+  font-family: "Space Mono", "JetBrains Mono", monospace;
+  font-size: 11px;
+  padding: 8px;
+  resize: vertical;
+}
+
+.ai-custom-textarea:focus { outline: none; border-color: #FFFFFF; }
+
+.ai-card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ai-snippet-box {
+  background: #111111;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: #999999;
+  line-height: 1.45;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+.ai-privacy-note {
+  font-family: "Space Mono", "JetBrains Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4A9E5C;
+}
+
+.ai-card-footer { padding: 12px 16px 16px; }
+
+.ai-btn-gemini-popup {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 999px;
+  color: #000000;
+  font-family: "Space Mono", "JetBrains Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ai-btn-gemini-popup:hover { background: #999999; border-color: #999999; }
+
+.ai-copy-alert {
+  margin-top: 8px;
+  font-family: "Space Mono", "JetBrains Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4A9E5C;
+  text-align: center;
+}
+
+@keyframes ndFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

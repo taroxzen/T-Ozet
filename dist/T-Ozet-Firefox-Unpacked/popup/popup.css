@@ -1,0 +1,77 @@
+﻿/* T-Özet v1.1 — Popup (Nothing Design / dark) */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  width: 340px;
+  background: var(--black);
+  color: var(--text-primary);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  padding: 16px;
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.popup-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand { display: flex; align-items: center; gap: 12px; }
+
+.avatar-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  filter: grayscale(1);
+}
+
+.brand-text h1 {
+  font-family: var(--font-display);
+  font-variation-settings: "DOTS" 2;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--text-display);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.icon-btn { font-size: 14px; }
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn-primary,
+.btn-secondary { width: 100%; min-height: 44px; }
+
+.popup-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--text-disabled);
+  text-transform: uppercase;
+}
+
+.popup-footer .signature { color: var(--text-secondary); }

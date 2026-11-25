@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Düz, dolu zemin: Windows küçük ikonunda net okunur -->
+  <rect width="128" height="128" rx="20" fill="#0A0A0B"/>
+
+  <!-- Kalın T -->
+  <rect x="22" y="30" width="84" height="16" rx="4" fill="#E8E8E8"/>
+  <rect x="56" y="30" width="16" height="54" fill="#E8E8E8"/>
+
+  <!-- Sıkıştırma üçgeni -->
+  <path d="M50 84 L78 84 L64 100 Z" fill="#9CA3AF"/>
+</svg>

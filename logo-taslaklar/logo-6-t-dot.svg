@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <rect width="128" height="128" rx="20" fill="#0B0B0C"/>
+
+  <!-- Kalın T -->
+  <rect x="24" y="36" width="80" height="14" rx="3" fill="#E8E8E8"/>
+  <rect x="57" y="36" width="14" height="60" fill="#E8E8E8"/>
+
+  <!-- Tek vurgu noktası -->
+  <circle cx="96" cy="24" r="8" fill="#9CA3AF"/>
+</svg>

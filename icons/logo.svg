@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Dolu zemin -->
+  <rect width="128" height="128" rx="20" fill="#000000"/>
+
+  <!-- Daralan girdi satırları, hepsi ortalanmış -->
+  <rect x="20" y="21" width="88" height="14" rx="3" fill="#9CA3AF"/>
+  <rect x="24" y="45" width="80" height="14" rx="3" fill="#9CA3AF"/>
+  <rect x="28" y="69" width="72" height="14" rx="3" fill="#9CA3AF"/>
+
+  <!-- Tam genişlikte çıktı satırı -->
+  <rect x="20" y="93" width="88" height="16" rx="3" fill="#E8E8E8"/>
+</svg>
