@@ -19,6 +19,9 @@
 
 </div>
 
+> [!NOTE]
+> 📚 [Wiki](https://github.com/taroxzen/T-Ozet/wiki) · 🔐 [Güvenlik politikası](SECURITY.md) · 🛡️ [Güvenlik açığı bildir](https://github.com/taroxzen/T-Ozet/security/advisories/new)
+
 ---
 
 ## 🎯 Ne yapar?
